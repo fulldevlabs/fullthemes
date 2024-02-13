@@ -1,0 +1,163 @@
+---
+import {
+  Cards,
+  Deck,
+  Card,
+  // Collapsibles,
+  HeroSection,
+  SpotlightSection,
+  FeaturesSection,
+  Section,
+  ReviewsSection,
+  LayoutMain,
+} from "@silveltman/fullui/src";
+---
+
+<LayoutMain>
+  <HeroSection
+    heading="Pioneering Urban Agriculture Excellence"
+    tagline="EcoGrow Solutions"
+    text="Experience the pinnacle of urban agriculture with EcoGrow Solutions. Our advanced gardening solutions and sustainable practices redefine urban living. Join us in cultivating a greener, more prosperous future."
+    buttons={[
+      { variant: "primary", text: "FullUI", href: "#" },
+      { variant: "secondary", text: "Read more", href: "#" },
+    ]}
+  />
+
+  <SpotlightSection
+    heading="Ready to Transform Your Space?"
+    text="Take the first step towards creating your urban oasis with EcoGrow Solutions."
+    buttons={[{ variant: "primary", text: "Get Started Today", href: "#" }]}
+  />
+
+  <FeaturesSection
+    heading="Our EcoGrow Solutions"
+    text="Discover how we're revolutionizing urban gardening:"
+  >
+    <Deck>
+      <Cards
+        cards={[
+          {
+            icon: "message-circle",
+            heading: "Vertical Gardening Systems",
+            text: "Maximize your space with our state-of-the-art vertical gardening solutions, designed to grow more in less space.",
+          },
+          {
+            icon: "message-circle",
+            heading: "Vertical Gardening Systems",
+            text: "Maximize your space with our state-of-the-art vertical gardening solutions, designed to grow more in less space.",
+          },
+        ]}
+      />
+    </Deck>
+  </FeaturesSection>
+
+  <!-- todo: stats component (ik dacht dat die al bestond) -->
+  <Section>
+    <h1>See the numbers behind our commitment to sustainability:</h1>
+    <div>
+      <p>1,000+</p>
+      <p>Urban Gardens Established</p>
+    </div>
+    <div>
+      <p>95%</p>
+      <p>Waste Reduction</p>
+    </div>
+    <div>
+      <p>50%</p>
+      <p>Water Savings</p>
+    </div>
+    <div>
+      <p>10,000+</p>
+      <p>Trees Planted</p>
+    </div>
+  </Section>
+
+  <ReviewsSection>
+    <Deck
+      collection="reviews"
+      cards={[
+        {
+          rating: 5,
+          text: "EcoGrow Solutions transformed my balcony into a thriving garden oasis! Their vertical gardening system is ingenious and easy to maintain.",
+        },
+        {
+          rating: 4,
+          text: "As a sustainability advocate, I appreciate EcoGrow's commitment to eco-friendly practices. Their team provided excellent guidance on composting and rainwater harvesting.",
+        },
+        {
+          rating: 5,
+          text: "I attended one of EcoGrow's workshops and was blown away by the knowledge and passion of their instructors. Highly recommend for anyone looking to start their urban gardening journey!",
+        },
+        {
+          rating: 5,
+          text: "The community aspect of EcoGrow Solutions is fantastic. I've connected with fellow urban gardeners, exchanged tips, and even participated in garden swaps. It truly feels like a supportive ecosystem.",
+        },
+        {
+          rating: 4,
+          text: "From consultation to installation, EcoGrow Solutions exceeded my expectations. Their team was professional, knowledgeable, and genuinely cared about my garden's success.",
+        },
+      ]}
+    />
+  </ReviewsSection>
+
+  <Section>
+    <h1>Subscription plans</h1>
+    <!-- Tier 1: Green Starter
+
+Price: $9.99/month
+
+Features:
+
+Access to EcoGrow's comprehensive library of educational resources and gardening guides.
+Monthly newsletter with tips, tricks, and seasonal gardening advice.
+Exclusive discounts on EcoGrow products and workshops.
+Community forum access to connect with fellow urban gardeners and share experiences.
+Starter kit with seeds and basic gardening supplies delivered quarterly.
+Tier 2: EcoPro
+
+Price: $19.99/month
+
+Features:
+
+All features included in Green Starter plan, plus:
+Personalized gardening consultations with EcoGrow experts to optimize your urban garden layout and plant selection.
+Priority registration and discounted rates for EcoGrow workshops and events.
+Quarterly subscription box with curated eco-friendly gardening products, tools, and seeds.
+Early access to new EcoGrow products and innovations.
+Dedicated customer support hotline for prompt assistance with gardening queries and troubleshooting.
+Choose the tier that best fits your gardening needs and join the EcoGrow community today! -->
+  </Section>
+
+  <!-- <Collapsibles collapsibles={[]} /> -->
+  <!-- FAQ -->
+  <!-- How does vertical gardening work?
+Vertical gardening maximizes space by growing plants upwards instead of outwards. Our innovative systems utilize vertical structures to support plant growth, allowing you to grow more in less space.
+
+Are your gardening practices environmentally friendly?
+Yes, sustainability is at the core of what we do. We promote eco-friendly gardening techniques such as composting, rainwater harvesting, and organic pest control to minimize environmental impact.
+
+Can I grow food in an urban environment?
+Absolutely! Our solutions are tailored to urban environments, allowing you to grow a variety of fruits, vegetables, herbs, and flowers in limited spaces like balconies, rooftops, and small yards.
+
+I'm new to gardening. Is EcoGrow suitable for beginners?
+Definitely! Whether you're a novice or an experienced gardener, our resources and support are tailored to your needs. We offer educational workshops, personalized consultations, and a supportive community to help you succeed.
+
+What kind of support do you offer?
+We provide comprehensive support to ensure your gardening success. From educational resources and expert consultations to community forums and dedicated customer support, we're here to assist you every step of the way.
+
+How do I cancel my subscription?
+You can cancel your subscription at any time by logging into your account on our website and following the cancellation instructions. We're committed to providing a hassle-free experience, so you're never locked into a plan that no longer suits your needs.
+
+Do you ship internationally?
+At the moment, we primarily serve customers within the United States. However, we're continually exploring opportunities to expand our reach and may offer international shipping in the future.
+
+Are your products suitable for indoor gardening?
+Yes, many of our products are designed for indoor use, making them ideal for apartment dwellers and those with limited outdoor space. Our experts can recommend the best solutions for your indoor gardening needs. -->
+
+  <SpotlightSection
+    heading="Let's Cultivate Change, Together!"
+    text="Ready to transform your urban space into a green sanctuary?"
+    buttons={[{ variant: "primary", text: "Plant Your Future Now", href: "#" }]}
+  />
+</LayoutMain>

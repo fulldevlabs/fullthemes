@@ -1,0 +1,28 @@
+---
+import { HeroSection } from "@silveltman/fullui/src";
+import { LayoutMain } from "@silveltman/fullui/src";
+---
+
+<LayoutMain>
+  <HeroSection
+    tagline="FullThemes"
+    heading="Use our high quality templates made with FullUI"
+    text="We have made templates with FullUI, so you can get started on your import your content and put your website online immediately!"
+    buttons={[
+      { variant: "primary", text: "FullUI", href: "#" },
+      { variant: "secondary", text: "Discover", href: "#" },
+    ]}
+  />
+</LayoutMain>
+
+<style>
+  main {
+    margin: auto;
+    padding: 1rem;
+    width: 800px;
+    max-width: calc(100% - 2rem);
+    color: white;
+    font-size: 20px;
+    line-height: 1.6;
+  }
+</style>
