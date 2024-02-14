@@ -1,25 +1,80 @@
 ---
-import { HeroSection, Deck, Article } from "@silveltman/fullui/src";
+import {
+  HeroSection,
+  Deck,
+  CtaSection,
+  LayoutMain,
+} from "@fulldevlabs/fullui/src";
 ---
 
-<HeroSection
-  heading="Stand out with tailored blog posts for digital success"
-  tagline="BlogGenius"
-  text="Unlock the power of your online presence with BlogGenius. Your go-to source for expertly crafted content. Let's redefine digital success together."
-  buttons={[
-    {
-      variant: "primary",
-      text: "FullUI",
-      href: "#",
-    },
-    {
-      variant: "secondary",
-      text: "Read more",
-      href: "#",
-    },
-  ]}
-/>
+<LayoutMain>
+  <HeroSection
+    heading="Stand out with tailored blog posts for digital success"
+    tagline="BlogGenius"
+    text="Unlock the power of your online presence with BlogGenius. Your go-to source for expertly crafted content. Let's redefine digital success together."
+    buttons={[
+      {
+        variant: "primary",
+        text: "FullUI",
+        href: "#",
+      },
+      {
+        variant: "secondary",
+        text: "Read more",
+        href: "#",
+      },
+    ]}
+  />
 
-<Deck>
-  <Article text="This is test text" heading="This is test heading" />
-</Deck>
+  <Deck
+    collection="posts"
+    cards={[
+      {
+        heading:
+          "Crafting Compelling Content: Strategies for Captivating Your Audience",
+      },
+      {
+        heading:
+          "Mastering SEO: How to Optimize Your Blog Posts for Search Engines",
+      },
+      {
+        heading:
+          "The Power of Storytelling: Engaging Your Audience with Narrative-driven Content",
+      },
+      {
+        heading:
+          "Navigating the World of Social Media: Tips for Promoting Your Blog Effectively",
+      },
+      {
+        heading:
+          "Understanding Your Audience: Key Insights to Tailor Your Blog Content",
+      },
+      {
+        heading:
+          "Unlocking the Secrets of Successful Blogging: Strategies from Industry Experts",
+      },
+      {
+        heading:
+          "Creating Killer Headlines: Grabbing Attention and Driving Clicks",
+      },
+      {
+        heading:
+          "The Art of Blog Design: Enhancing User Experience and Engagement",
+      },
+      {
+        heading:
+          "Maximizing Monetization: Strategies for Generating Revenue from Your Blog",
+      },
+      {
+        heading:
+          "Staying Ahead of the Curve: Emerging Trends in Blogging and Content Marketing",
+      },
+    ]}
+  />
+
+  <CtaSection
+    heading="Sign up for our emails"
+    text="Prefer to read and/or receive our blog posts in your inbox? Sign up here!"
+    buttons={[{ text: "Sign up", href: "#" }]}
+  />
+</LayoutMain>

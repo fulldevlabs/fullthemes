@@ -1,6 +1,5 @@
 ---
-import { HeroSection } from "@silveltman/fullui/src";
-import { LayoutMain } from "@silveltman/fullui/src";
+import { HeroSection, LayoutMain, Deck } from "@fulldevlabs/fullui/src";
 ---
 
 <LayoutMain>
@@ -11,6 +10,15 @@ import { LayoutMain } from "@silveltman/fullui/src";
     buttons={[
       { variant: "primary", text: "FullUI", href: "#" },
       { variant: "secondary", text: "Discover", href: "#" },
+    ]}
+  />
+  <Deck
+    collection="products"
+    cards={[
+      { heading: "Starter", price: 19.99 },
+      { heading: "Pro", price: 129.99 },
+      { heading: "Ultimate", price: 279.99 },
+      { heading: "Complete", price: 579.99 },
     ]}
   />
 </LayoutMain>
