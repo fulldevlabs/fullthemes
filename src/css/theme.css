@@ -1,24 +1,23 @@
-:root,
-* {
+:root, * {
   --background: var(--base-1);
   --color: var(--base-11);
-  --font: 400 var(--text2) / 1.625 "Open Sans", sans-serif;
+  --font: 400 var(--text2)/1.625 'Open Sans', sans-serif;
   --transition: all 150ms cubic-bezier(0.4, 0, 0.2, 1);
-  --radius: 8px;
+  --radius: 0px;
   --border: 1px solid var(--base-6);
 }
 
 .heading {
-  --font: 700 var(--text3) / 1.25 "Open Sans", serif;
+  --font: 700 var(--text3)/1.25 'Open Sans', serif;
   --color: var(--base-12);
 }
 
 .card .heading {
-  --font: 600 var(--text3) / 1.625 "Open Sans", sans-serif;
+  --font: 600 var(--text3)/1.625 'Open Sans', sans-serif;
 }
 
 .tagline {
-  --font: 600 var(--text1) / 1.625 "Open Sans", sans-serif;
+  --font: 600 var(--text1)/1.625 'Open Sans', sans-serif;
   --color: var(--accent-11);
 }
 
@@ -36,7 +35,7 @@
   --background-active: var(--base-4);
   --border: 1px solid var(--base-6);
   --border-hover: 1px solid var(--base-7);
-  --radius: 12px;
+  --radius: 0px;
 }
 
 .input {
@@ -45,7 +44,7 @@
   --background-active: var(--base-4);
   --border: 1px solid var(--base-7);
   --border-hover: 1px solid var(--base-8);
-  --radius: 8px;
+  --radius: 0px;
 }
 
 .primary {
@@ -53,7 +52,7 @@
   --background-hover: var(--accent-10);
   --border: 1px solid var(--accent-10);
   --color: var(--accent-fg);
-  --radius: 8px;
+  --radius: 0px;
 }
 
 .secondary {
@@ -63,7 +62,7 @@
   --border: 1px solid var(--accent-7);
   --border-hover: 1px solid var(--accent-8);
   --color: var(--accent-11);
-  --radius: 8px;
+  --radius: 0px;
 }
 
 /* ----------------------------------------------- */
@@ -72,19 +71,19 @@
 .theme-subtle {
   --background: var(--base-4);
   --color: var(--base-11);
-  --font: 400 var(--text2) / 1.625 Arial, sans-serif;
+  --font: 400 var(--text2)/1.625 Arial, sans-serif;
   --transition: all 150ms cubic-bezier(0.4, 0, 0.2, 1);
-
+  
   .heading {
-    --font: 400 var(--text3) / 1.25 Arial, sans-serif;
+    --font: 400 var(--text3)/1.25 Arial, sans-serif;
     --color: var(--base-12);
   }
-
+  
   .tagline {
-    --font: 400 var(--text1) / 1.625 Arial, sans-serif;
+    --font: 400 var(--text1)/1.625 Arial, sans-serif;
     --color: var(--accent-11);
   }
-
+  
   .panel {
     --background: var(--base-2);
     --background-hover: var(--base-3);
@@ -93,7 +92,7 @@
     --border-hover: 1px solid var(--base-7);
     --radius: 12px;
   }
-
+  
   .input {
     --background: var(--base-2);
     --background-hover: var(--base-3);
@@ -102,7 +101,7 @@
     --border-hover: 1px solid var(--base-8);
     --radius: 8px;
   }
-
+  
   .primary {
     --background: var(--accent-9);
     --background-hover: var(--accent-10);
@@ -110,7 +109,7 @@
     --color: var(--accent-fg);
     --radius: 8px;
   }
-
+  
   .secondary {
     --background: var(--accent-3);
     --background-hover: var(--accent-4);
@@ -128,19 +127,19 @@
 .theme-subtle {
   --background: var(--base-4);
   --color: var(--base-11);
-  --font: 400 var(--text2) / 1.625 Arial, sans-serif;
+  --font: 400 var(--text2)/1.625 Arial, sans-serif;
   --transition: all 150ms cubic-bezier(0.4, 0, 0.2, 1);
-
+  
   .heading {
-    --font: 400 var(--text3) / 1.25 Arial, sans-serif;
+    --font: 400 var(--text3)/1.25 Arial, sans-serif;
     --color: var(--base-12);
   }
-
+  
   .tagline {
-    --font: 400 var(--text1) / 1.625 Arial, sans-serif;
+    --font: 400 var(--text1)/1.625 Arial, sans-serif;
     --color: var(--accent-11);
   }
-
+  
   .panel {
     --background: var(--base-2);
     --background-hover: var(--base-3);
@@ -149,7 +148,7 @@
     --border-hover: 1px solid var(--base-7);
     --radius: 12px;
   }
-
+  
   .input {
     --background: var(--base-2);
     --background-hover: var(--base-3);
@@ -158,7 +157,7 @@
     --border-hover: 1px solid var(--base-8);
     --radius: 8px;
   }
-
+  
   .primary {
     --background: var(--accent-9);
     --background-hover: var(--accent-10);
@@ -166,7 +165,7 @@
     --color: var(--accent-fg);
     --radius: 8px;
   }
-
+  
   .secondary {
     --background: var(--accent-3);
     --background-hover: var(--accent-4);
@@ -177,6 +176,7 @@
     --radius: 8px;
   }
 }
+
 
 /* :root {
   --background: var(--base-1);
@@ -191,11 +191,11 @@
   --transition: ;
 } */
 
+
 /* ----------------------------------------------- */
 /* Helper class to apply the theme */
 /* ----------------------------------------------- */
-.full-theme,
-[class*="theme-"] {
+.full-theme, [class*="theme-"]{
   color: var(--color);
   border: var(--border);
   background: var(--background);
@@ -211,8 +211,5 @@
 
 .full-theme:active {
   border: var(--border-active, var(--border-hover, var(--border)));
-  background: var(
-    --background-active,
-    var(--background-hover, var(--background))
-  );
+  background: var(--background-active, var(--background-hover, var(--background)));
 }

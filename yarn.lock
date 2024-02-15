@@ -945,10 +945,10 @@
     hastscript "^7.2.0"
     unist-util-visit-parents "^5.1.3"
 
-"@fulldevlabs/fullui@^0.0.1":
-  version "0.0.1"
-  resolved "https://registry.yarnpkg.com/@fulldevlabs/fullui/-/fullui-0.0.1.tgz#278a6e6bcd6e56f510e4c0e46b30fd5e787fc6d8"
-  integrity sha512-hfV0OqAZ4h/38gotdzYmYdWiNtC3fwp78RJwXqMjIlYqPnhcVqTNiwFBglc0EVx/JEDI2D3jFXz7OO99s+EjyQ==
+"@fulldevlabs/fullui@^0.0.2":
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/@fulldevlabs/fullui/-/fullui-0.0.2.tgz#9d47bbab7c95341697056bbc232f21044c23da7d"
+  integrity sha512-0VJcmkDjZOimp3XX6r+HMFgMX5bGdvVMDg36dldHzKq1Qiwpp5hyvl+BGBmFNM1PI+0gEOkLoKu9OVMmPB5RhA==
   dependencies:
     "@astrojs/check" "^0.5.3"
     "@astrojs/prefetch" "^0.4.1"
@@ -976,6 +976,7 @@
     sharp "^0.33.2"
     typescript "^5.3.3"
     unocss "^0.58.5"
+    zod "^3.22.4"
 
 "@iconify-json/tabler@^1.1.105":
   version "1.1.105"
@@ -1175,6 +1176,11 @@
     unist-util-stringify-position "^4.0.0"
     unist-util-visit "^5.0.0"
     vfile "^6.0.0"
+
+"@medv/finder@^3.1.0":
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/@medv/finder/-/finder-3.1.0.tgz#e157c68f166ade9f113a1314603365bf81dd8b8c"
+  integrity sha512-ojkXjR3K0Zz3jnCR80tqPL+0yvbZk/lEodb6RIVjLz7W8RVA2wrw8ym/CzCpXO9SYVUIKHFUpc7jvf8UKfIM3w==
 
 "@nanostores/persistent@^0.9.1":
   version "0.9.1"
@@ -1954,6 +1960,79 @@ astro@^4.3.6:
     unist-util-visit "^5.0.0"
     vfile "^6.0.1"
     vite "^5.0.12"
+    vitefu "^0.2.5"
+    which-pm "^2.1.1"
+    yargs-parser "^21.1.1"
+    zod "^3.22.4"
+  optionalDependencies:
+    sharp "^0.32.6"
+
+astro@^4.4.0:
+  version "4.4.0"
+  resolved "https://registry.yarnpkg.com/astro/-/astro-4.4.0.tgz#862c8cc778d292188175af02a72533eac3d89804"
+  integrity sha512-JAsMrm1Z6W4Iqg9Q7LW/6lCXrqa4jndEOlR/yu7NGNP0BrPwSM8i4+yzya6hxgsNvyyVK8ywthaNhFmqd8Z+cg==
+  dependencies:
+    "@astrojs/compiler" "^2.5.3"
+    "@astrojs/internal-helpers" "0.2.1"
+    "@astrojs/markdown-remark" "4.2.1"
+    "@astrojs/telemetry" "3.0.4"
+    "@babel/core" "^7.23.3"
+    "@babel/generator" "^7.23.3"
+    "@babel/parser" "^7.23.3"
+    "@babel/plugin-transform-react-jsx" "^7.22.5"
+    "@babel/traverse" "^7.23.3"
+    "@babel/types" "^7.23.3"
+    "@medv/finder" "^3.1.0"
+    "@types/babel__core" "^7.20.4"
+    acorn "^8.11.2"
+    aria-query "^5.3.0"
+    axobject-query "^4.0.0"
+    boxen "^7.1.1"
+    chokidar "^3.5.3"
+    ci-info "^4.0.0"
+    clsx "^2.0.0"
+    common-ancestor-path "^1.0.1"
+    cookie "^0.6.0"
+    cssesc "^3.0.0"
+    debug "^4.3.4"
+    deterministic-object-hash "^2.0.1"
+    devalue "^4.3.2"
+    diff "^5.1.0"
+    dlv "^1.1.3"
+    dset "^3.1.3"
+    es-module-lexer "^1.4.1"
+    esbuild "^0.19.6"
+    estree-walker "^3.0.3"
+    execa "^8.0.1"
+    fast-glob "^3.3.2"
+    flattie "^1.1.0"
+    github-slugger "^2.0.0"
+    gray-matter "^4.0.3"
+    html-escaper "^3.0.3"
+    http-cache-semantics "^4.1.1"
+    js-yaml "^4.1.0"
+    kleur "^4.1.4"
+    magic-string "^0.30.3"
+    mdast-util-to-hast "13.0.2"
+    mime "^3.0.0"
+    ora "^7.0.1"
+    p-limit "^5.0.0"
+    p-queue "^8.0.1"
+    path-to-regexp "^6.2.1"
+    preferred-pm "^3.1.2"
+    prompts "^2.4.2"
+    rehype "^13.0.1"
+    resolve "^1.22.4"
+    semver "^7.5.4"
+    server-destroy "^1.0.1"
+    shikiji "^0.9.19"
+    shikiji-core "^0.9.19"
+    string-width "^7.0.0"
+    strip-ansi "^7.1.0"
+    tsconfck "^3.0.0"
+    unist-util-visit "^5.0.0"
+    vfile "^6.0.1"
+    vite "^5.1.2"
     vitefu "^0.2.5"
     which-pm "^2.1.1"
     yargs-parser "^21.1.1"
@@ -5899,6 +5978,17 @@ vite@^5.0.12:
   version "5.1.1"
   resolved "https://registry.yarnpkg.com/vite/-/vite-5.1.1.tgz#294e39b199d669981efc7e0261b14f78ec80819e"
   integrity sha512-wclpAgY3F1tR7t9LL5CcHC41YPkQIpKUGeIuT8MdNwNZr6OqOTLs7JX5vIHAtzqLWXts0T+GDrh9pN2arneKqg==
+  dependencies:
+    esbuild "^0.19.3"
+    postcss "^8.4.35"
+    rollup "^4.2.0"
+  optionalDependencies:
+    fsevents "~2.3.3"
+
+vite@^5.1.2:
+  version "5.1.2"
+  resolved "https://registry.yarnpkg.com/vite/-/vite-5.1.2.tgz#34e04d38db27ceebe6f0c9d053ea14d6496753d1"
+  integrity sha512-uwiFebQbTWRIGbCaTEBVAfKqgqKNKMJ2uPXsXeLIZxM8MVMjoS3j0cG8NrPxdDIadaWnPSjrkLWffLSC+uiP3Q==
   dependencies:
     esbuild "^0.19.3"
     postcss "^8.4.35"
