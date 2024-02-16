@@ -16,8 +16,8 @@ export default defineConfig({
     fulluiIntegration({
       scheme: "light",
       hue: {
-        base: "slate",
-        accent: "slate",
+        base: "mauve",
+        accent: "jade",
       },
     }),
   ],

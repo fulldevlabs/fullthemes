@@ -1,31 +1,41 @@
-:root, .hue-base, .scheme-dark, .scheme-light, .light, .dark {
-  --base-1: var(--slate-1);
-  --base-2:  var(--slate-2);
-  --base-3:  var(--slate-3);
-  --base-4:  var(--slate-4);
-  --base-5:  var(--slate-5);
-  --base-6:  var(--slate-6);
-  --base-7:  var(--slate-7);
-  --base-8:  var(--slate-8);
-  --base-9:  var(--slate-9);
-  --base-10:  var(--slate-10);
-  --base-11:  var(--slate-11);
-  --base-12:  var(--slate-12);
+:root,
+.hue-base,
+.scheme-dark,
+.scheme-light,
+.light,
+.dark {
+  --base-1: var(--mauve-1);
+  --base-2: var(--mauve-2);
+  --base-3: var(--mauve-3);
+  --base-4: var(--mauve-4);
+  --base-5: var(--mauve-5);
+  --base-6: var(--mauve-6);
+  --base-7: var(--mauve-7);
+  --base-8: var(--mauve-8);
+  --base-9: var(--mauve-9);
+  --base-10: var(--mauve-10);
+  --base-11: var(--mauve-11);
+  --base-12: var(--mauve-12);
   --base-fg: white;
-} 
+}
 
-:root, .hue-accent, .scheme-dark, .scheme-light, .light, .dark {
-  --accent-1: var(--slate-1);
-  --accent-2:  var(--slate-2);
-  --accent-3:  var(--slate-3);
-  --accent-4:  var(--slate-4);
-  --accent-5:  var(--slate-5);
-  --accent-6:  var(--slate-6);
-  --accent-7:  var(--slate-7);
-  --accent-8:  var(--slate-8);
-  --accent-9:  var(--slate-9);
-  --accent-10:  var(--slate-10);
-  --accent-11:  var(--slate-11);
-  --accent-12:  var(--slate-12);
+:root,
+.hue-accent,
+.scheme-dark,
+.scheme-light,
+.light,
+.dark {
+  --accent-1: var(--jade-1);
+  --accent-2: var(--jade-2);
+  --accent-3: var(--jade-3);
+  --accent-4: var(--jade-4);
+  --accent-5: var(--jade-5);
+  --accent-6: var(--jade-6);
+  --accent-7: var(--jade-7);
+  --accent-8: var(--jade-8);
+  --accent-9: var(--jade-9);
+  --accent-10: var(--jade-10);
+  --accent-11: var(--jade-11);
+  --accent-12: var(--jade-12);
   --accent-fg: white;
 }
