@@ -1,17 +1,14 @@
 ---
-import {
-  Deck,
-  HeroSection,
-  LayoutMain,
-  CtaSection,
-} from "@fulldevlabs/fullui/src";
+import { Deck, HeroSection, Layout, CtaSection } from "@fulldevlabs/fullui/src";
 ---
 
-<LayoutMain>
+<Layout>
   <HeroSection
+    frame="screen"
     heading="Enhancing outdoor spaces with creativity, quality craftsmanship, and exceptional customer service."
     tagline="Fresh Moves Landscaping"
     text="With a passion for transforming ordinary landscapes into stunning outdoor retreats, our team brings expertise and attention to detail to every project, big or small."
+    image={{ src: "/test.jpg" }}
     buttons={[
       {
         variant: "primary",
@@ -28,31 +25,39 @@ import {
 
   <CtaSection
     heading="Invite a friend and both of you will get"
+    frame="panel"
+    align="stretch"
     text="one-time free Lawn Care and Maintenance when they sign up!"
     buttons={[{ text: "Browse products", href: "#" }]}
   />
 
   <Deck
-    collection="reviews"
+    layout="carousel"
+    frame="panel"
     cards={[
       {
         rating: 5,
+        tagline: "Aurora D.",
         text: "Fresh Moves Landscaping transformed my backyard into a beautiful oasis! From the initial design consultation to the final installation, the team was professional, knowledgeable, and attentive to detail. They listened to my ideas and brought them to life with creativity and expertise. I couldn't be happier with the results!",
       },
       {
         rating: 4,
+        tagline: "Caleb M.",
         text: "I recently hired Fresh Moves Landscaping for lawn care and maintenance services, and I've been impressed with their professionalism and reliability. They consistently show up on time and do a thorough job of mowing, edging, and trimming. My lawn has never looked better!",
       },
       {
         rating: 5,
+        tagline: "Jade T.",
         text: "We had Fresh Moves Landscaping install a custom paver patio in our backyard, and we're thrilled with the results! The team was fantastic to work with, from the initial planning stages to the final touches. They paid attention to every detail and delivered a high-quality finished product. I would highly recommend them to anyone looking to enhance their outdoor living space.",
       },
       {
         rating: 3,
+        tagline: "Xavier P.",
         text: "Overall, I'm satisfied with the landscaping services provided by Fresh Moves. However, I did encounter some communication issues along the way, and there were times when I felt like I had to follow up multiple times to get updates on the progress of my project. Despite these minor issues, the final outcome was satisfactory, and the team did a good job of addressing any concerns I had.",
       },
       {
         rating: 5,
+        tagline: "Scarlett M.",
         text: "Fresh Moves Landscaping exceeded my expectations with their seasonal clean-up services! They arrived promptly and worked efficiently to get my yard looking neat and tidy for the upcoming season. The attention to detail was impressive, and the team went above and beyond to ensure everything was taken care of. I will definitely be using their services again in the future!",
       },
     ]}
@@ -60,32 +65,40 @@ import {
 
   <CtaSection
     heading="High quality products"
+    frame="panel"
+    align="stretch"
     text="All of our products are of the highest quality, while maintaining a competetive price, shop our selection today!"
     buttons={[{ text: "Look around", href: "#" }]}
   />
 
   <Deck
-    collection="products"
+    layout="grid"
+    frame="panel"
     cards={[
       {
         heading: "Landscape Design and Installation",
-        price: 5000,
+        price: 489.99,
+        src: "/landscape_design_services.jpg",
       },
       {
         heading: "Lawn Care and Maintenance",
-        price: 60,
+        price: 67.99,
+        src: "/lawn_care_services.jpg",
       },
       {
         heading: "Hardscape Construction",
-        price: 16000,
+        price: 1299.99,
+        src: "/hardscape_services.jpg",
       },
       {
         heading: "Irrigation Systems",
-        price: 2250,
+        price: 2149.99,
+        src: "/irrigation_services.jpg",
       },
       {
         heading: "Seasonal Clean-Up",
-        price: 145,
+        price: 119.99,
+        src: "/clean_up_services.jpg",
       },
     ]}
   />
@@ -95,4 +108,4 @@ import {
     text="Prefer to read and/or receive our blog posts in your inbox? Sign up here!"
     buttons={[{ text: "Sign up", href: "#" }]}
   />
-</LayoutMain>
+</Layout>

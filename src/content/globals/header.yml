@@ -1,0 +1,17 @@
+_schema: header
+impact: medium
+area: default
+position: sticky
+logo:
+  src: /logo.png
+  alt: FullUI
+links:
+  - text: Home
+    href: /
+  - text: Templates
+    href: /templates
+  - text: Documentation
+    href: /fullui-docs
+buttons:
+  - text: Need support?
+    href: "#"

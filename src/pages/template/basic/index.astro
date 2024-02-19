@@ -5,15 +5,16 @@ import {
   SpotlightSection,
   FeaturesSection,
   Section,
-  LayoutMain,
+  Layout,
 } from "@fulldevlabs/fullui/src";
 ---
 
-<LayoutMain>
+<Layout>
   <HeroSection
     heading="Pioneering Urban Agriculture Excellence"
     tagline="EcoGrow Solutions"
     text="Experience the pinnacle of urban agriculture with EcoGrow Solutions. Our advanced gardening solutions and sustainable practices redefine urban living. Join us in cultivating a greener, more prosperous future."
+    image={{ src: "/solar_field_basic.jpg" }}
     buttons={[
       { variant: "primary", text: "FullUI", href: "#" },
       { variant: "secondary", text: "Read more", href: "#" },
@@ -21,18 +22,22 @@ import {
   />
 
   <SpotlightSection
+    frame="panel"
+    layout="split"
     heading="Ready to Transform Your Space?"
+    image={{ src: "/solar_panels_basic.jpg" }}
     text="Take the first step towards creating your urban oasis with EcoGrow Solutions."
     buttons={[{ variant: "primary", text: "Get Started Today", href: "#" }]}
   />
 
   <FeaturesSection
+    frame="panel"
     heading="Our EcoGrow Solutions"
     text="Discover how we're revolutionizing urban gardening:"
   />
 
   <Deck
-    collection="features"
+    frame="panel"
     cards={[
       {
         icon: "message-circle",
@@ -69,7 +74,7 @@ import {
   </Section>
 
   <Deck
-    collection="reviews"
+    frame="panel"
     cards={[
       {
         rating: 5,
@@ -97,7 +102,7 @@ import {
   <h1>Subscription plans</h1>
   <!-- TODO: plans component -->
   <Deck
-    collection="features"
+    frame="panel"
     cards={[
       {
         price: 9.99,
@@ -138,8 +143,10 @@ import {
   Yes, many of our products are designed for indoor use, making them ideal for apartment dwellers and those with limited outdoor space. Our experts can recommend the best solutions for your indoor gardening needs. -->
 
   <SpotlightSection
+    frame="panel"
+    align="stretch"
     heading="Let's Cultivate Change, Together!"
     text="Ready to transform your urban space into a green sanctuary?"
     buttons={[{ variant: "primary", text: "Plant Your Future Now", href: "#" }]}
   />
-</LayoutMain>
+</Layout>
