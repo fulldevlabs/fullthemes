@@ -1,8 +1,8 @@
 ---
-import { HeroSection, LayoutMain, Deck } from "@fulldevlabs/fullui/src";
+import { HeroSection, Layout, Deck } from "@fulldevlabs/fullui/src";
 ---
 
-<LayoutMain>
+<Layout>
   <HeroSection
     tagline="FullThemes"
     heading="Use our high quality templates made with FullUI"
@@ -13,7 +13,7 @@ import { HeroSection, LayoutMain, Deck } from "@fulldevlabs/fullui/src";
     ]}
   />
   <Deck
-    collection="products"
+    frame="panel"
     cards={[
       { heading: "Starter", price: 19.99 },
       { heading: "Pro", price: 129.99 },
@@ -21,7 +21,7 @@ import { HeroSection, LayoutMain, Deck } from "@fulldevlabs/fullui/src";
       { heading: "Complete", price: 579.99 },
     ]}
   />
-</LayoutMain>
+</Layout>
 
 <style>
   main {
