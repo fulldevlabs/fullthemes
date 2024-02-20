@@ -1,3 +1,7 @@
+// TODO zie fullui-starter voor nieuwe versie van astro config
+// TODO zie fullui-starter voor repo config, dus ook prettierconfig etc
+// TODO zie ook packagejson voor de packages
+
 import sitemap from "@astrojs/sitemap";
 import { fulluiIntegration } from "@fulldevlabs/fullui/src/integration/fullui";
 import robotsTxt from "astro-robots-txt";
