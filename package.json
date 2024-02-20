@@ -1,19 +1,47 @@
 {
-  "name": "fullthemes",
+  "name": "@fulldevlabs/fullthemes",
   "type": "module",
   "version": "0.0.1",
+  "author": "Fulldev https://full.dev",
+  "license": "Unlicense",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
-    "build": "astro check && astro build",
+    "build": "astro build",
+    "check": "astro check",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "test": "astro check && astro build && astro preview"
   },
   "dependencies": {
-    "@astrojs/check": "^0.5.3",
+    "@astrojs/check": "^0.5.4",
+    "@astrojs/prefetch": "^0.4.1",
+    "@astrojs/sitemap": "^3.0.5",
+    "@astrojs/starlight": "^0.18.0",
+    "@bookshop/astro-bookshop": "3.9.0",
     "@fulldevlabs/fullui": "^0.0.5",
-    "astro": "^4.4.0",
+    "@radix-ui/colors": "^3.0.0",
+    "astro": "^4.3.6",
+    "astro-favicons": "^2.0.2",
+    "astro-robots-txt": "^1.0.0",
+    "astro-seo": "^0.8.0",
+    "autoprefixer": "^10.4.17",
     "postcss": "^8.4.35",
-    "typescript": "^5.3.3"
+    "postcss-preset-env": "^9.3.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "sharp": "^0.33.2",
+    "typescript": "^5.3.3",
+    "unocss": "^0.58.5"
+  },
+  "devDependencies": {
+    "@bookshop/astro-engine": "3.9.0",
+    "@bookshop/browser": "3.9.0",
+    "@bookshop/generate": "3.9.0",
+    "prettier": "3.2.5",
+    "prettier-plugin-astro": "0.13.0",
+    "prettier-plugin-astro-organize-imports": "^0.4.1",
+    "prettier-plugin-organize-imports": "^3.2.4",
+    "prettier-plugin-svelte": "^3.2.0"
   }
 }

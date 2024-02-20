@@ -1,39 +1,40 @@
 ---
-import { Deck, HeroSection, Layout, CtaSection } from "@fulldevlabs/fullui/src";
+import { CtaSection, Deck, HeroSection, Layout } from '@fulldevlabs/fullui/src'
 ---
 
 <Layout>
   <HeroSection
-    heading="Stand out with tailored blog posts for digital success"
-    tagline="NovaTech Gadgets"
-    text="Unlock the power of your online presence with BlogGenius. Your go-to source for expertly crafted content. Let's redefine digital success together."
+    heading="Embark on a Journey to Tomorrow with NovaSphere Innovations"
+    tagline="NovaSphere Innovations"
+    text="We specialize in creating cutting-edge products that redefine the boundaries of convenience, efficiency, and style, all while enhancing the everyday lives of our customers."
     buttons={[
       {
-        variant: "primary",
-        text: "FullUI",
-        href: "#",
+        variant: 'primary',
+        text: 'FullUI',
+        href: '#',
       },
       {
-        variant: "secondary",
-        text: "Read more",
-        href: "#",
+        variant: 'secondary',
+        text: 'Read more',
+        href: '#',
       },
     ]}
   />
 
   <CtaSection
+    frame="panel"
+    align="stretch"
     heading="Use code FULLTHEMES30 and"
     text="get a 30% discount on all products."
-    buttons={[{ text: "Browse products", href: "#" }]}
+    buttons={[{ text: 'Browse products', href: '#' }]}
   />
 
   <Deck
-    collection="reviews"
     frame="panel"
     cards={[
       {
         rating: 5,
-        text: "EcoGrow Solutions transformed my balcony into a thriving garden oasis! Their vertical gardening system is ingenious and easy to maintain.",
+        text: 'EcoGrow Solutions transformed my balcony into a thriving garden oasis! Their vertical gardening system is ingenious and easy to maintain.',
       },
       {
         rating: 4,
@@ -55,45 +56,49 @@ import { Deck, HeroSection, Layout, CtaSection } from "@fulldevlabs/fullui/src";
   />
 
   <CtaSection
+    frame="panel"
+    order="reverse"
+    align="stretch"
     heading="High quality products"
     text="All of our products are of the highest quality, while maintaining a competetive price, shop our selection today!"
-    buttons={[{ text: "Look around", href: "#" }]}
+    buttons={[{ text: 'Look around', href: '#' }]}
   />
 
   <Deck
-    collection="products"
     frame="panel"
     cards={[
       {
-        heading: "ZenTranquil Aromatherapy Diffuser",
-        price: 39.99,
-      },
-      {
-        heading: "StellarGlow LED Makeup Mirror",
+        heading: 'QuantumCharge Wireless Charging Pad',
         price: 49.99,
       },
       {
-        heading: "TechSavvy Smartwatch",
+        heading: 'StellarSense Smart Home Assistant',
+        price: 99.99,
+      },
+      {
+        heading: 'CosmoGlow LED Plant Growth Light',
+        price: 39.99,
+      },
+      {
+        heading: 'NebulaDream Deep Sleep Headband',
         price: 79.99,
       },
       {
-        heading: "EcoFresh Bamboo Fiber Towel Set",
-        price: 29.99,
-      },
-      {
-        heading: "AdventurePro Waterproof Backpack",
+        heading: 'SolarFlare UV-C Sanitizing Wand',
         price: 59.99,
       },
       {
-        heading: "QuantumX Wireless Earbuds with AI Assistant Integration",
-        price: 99.99,
+        heading: 'AeroPod Levitating Bluetooth Speaker',
+        price: 129.99,
       },
     ]}
   />
 
   <CtaSection
+    frame="panel"
+    align="stretch"
     heading="Sign up for our emails"
     text="Prefer to read and/or receive our blog posts in your inbox? Sign up here!"
-    buttons={[{ text: "Sign up", href: "#" }]}
+    buttons={[{ text: 'Sign up', href: '#' }]}
   />
 </Layout>
