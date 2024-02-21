@@ -1,36 +1,24 @@
 ---
-import { HeroSection, Layout, Deck } from "@fulldevlabs/fullui/src";
+import { Deck, HeroSection, Layout } from '@fulldevlabs/fullui/src'
 ---
 
 <Layout>
   <HeroSection
     tagline="FullThemes"
-    heading="Use our high quality templates made with FullUI"
-    text="We have made templates with FullUI, so you can get started on your import your content and put your website online immediately!"
+    heading="Discover our high quality templates made with FullUI"
+    text="We have made templates with FullUI, so you can get started on the important tasks immediately!"
     buttons={[
-      { variant: "primary", text: "FullUI", href: "#" },
-      { variant: "secondary", text: "Discover", href: "#" },
+      { variant: 'primary', text: 'FullUI', href: '#' },
+      { variant: 'secondary', text: 'Discover', href: '#' },
     ]}
   />
   <Deck
     frame="panel"
     cards={[
-      { heading: "Starter", price: 19.99 },
-      { heading: "Pro", price: 129.99 },
-      { heading: "Ultimate", price: 279.99 },
-      { heading: "Complete", price: 579.99 },
+      { heading: 'Basic', href: '/template/basic' },
+      { heading: 'Blog', href: '/template/blog' },
+      { heading: 'Services', href: '/template/services' },
+      { heading: 'Webshop', href: '/template/webshop' },
     ]}
   />
 </Layout>
-
-<style>
-  main {
-    margin: auto;
-    padding: 1rem;
-    width: 800px;
-    max-width: calc(100% - 2rem);
-    color: white;
-    font-size: 20px;
-    line-height: 1.6;
-  }
-</style>

@@ -6,11 +6,11 @@ seo:
     src: 
     alt: 
     
-heading: Lorem ipsum
+heading: Landscape design
 text: Lorem
 image:
-  src: https://picsum.photos/seed/11/800/600
+  src: /landscape_design_services.jpg
   alt: 
 
-blocks:
+blocks: gg
 ---

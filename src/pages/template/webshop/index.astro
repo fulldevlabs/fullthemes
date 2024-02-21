@@ -1,5 +1,9 @@
 ---
 import { CtaSection, Deck, HeroSection, Layout } from '@fulldevlabs/fullui/src'
+import { getCollection } from 'astro:content'
+
+const reviews = await getCollection('reviews')
+const products = await getCollection('products')
 ---
 
 <Layout>
@@ -31,28 +35,7 @@ import { CtaSection, Deck, HeroSection, Layout } from '@fulldevlabs/fullui/src'
 
   <Deck
     frame="panel"
-    cards={[
-      {
-        rating: 5,
-        text: 'EcoGrow Solutions transformed my balcony into a thriving garden oasis! Their vertical gardening system is ingenious and easy to maintain.',
-      },
-      {
-        rating: 4,
-        text: "As a sustainability advocate, I appreciate EcoGrow's commitment to eco-friendly practices. Their team provided excellent guidance on composting and rainwater harvesting.",
-      },
-      {
-        rating: 5,
-        text: "I attended one of EcoGrow's workshops and was blown away by the knowledge and passion of their instructors. Highly recommend for anyone looking to start their urban gardening journey!",
-      },
-      {
-        rating: 5,
-        text: "The community aspect of EcoGrow Solutions is fantastic. I've connected with fellow urban gardeners, exchanged tips, and even participated in garden swaps. It truly feels like a supportive ecosystem.",
-      },
-      {
-        rating: 4,
-        text: "From consultation to installation, EcoGrow Solutions exceeded my expectations. Their team was professional, knowledgeable, and genuinely cared about my garden's success.",
-      },
-    ]}
+    cards={reviews}
   />
 
   <CtaSection
@@ -66,32 +49,8 @@ import { CtaSection, Deck, HeroSection, Layout } from '@fulldevlabs/fullui/src'
 
   <Deck
     frame="panel"
-    cards={[
-      {
-        heading: 'QuantumCharge Wireless Charging Pad',
-        price: 49.99,
-      },
-      {
-        heading: 'StellarSense Smart Home Assistant',
-        price: 99.99,
-      },
-      {
-        heading: 'CosmoGlow LED Plant Growth Light',
-        price: 39.99,
-      },
-      {
-        heading: 'NebulaDream Deep Sleep Headband',
-        price: 79.99,
-      },
-      {
-        heading: 'SolarFlare UV-C Sanitizing Wand',
-        price: 59.99,
-      },
-      {
-        heading: 'AeroPod Levitating Bluetooth Speaker',
-        price: 129.99,
-      },
-    ]}
+    layout="grid"
+    cards={products}
   />
 
   <CtaSection

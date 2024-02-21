@@ -1,12 +1,16 @@
 ---
 import {
   Deck,
-  HeroSection,
-  SpotlightSection,
   FeaturesSection,
-  Section,
+  HeroSection,
   Layout,
-} from "@fulldevlabs/fullui/src";
+  Section,
+  SpotlightSection,
+} from '@fulldevlabs/fullui/src'
+
+import { getCollection } from 'astro:content'
+
+const reviews = await getCollection('reviews')
 ---
 
 <Layout>
@@ -14,10 +18,10 @@ import {
     heading="Pioneering Urban Agriculture Excellence"
     tagline="EcoGrow Solutions"
     text="Experience the pinnacle of urban agriculture with EcoGrow Solutions. Our advanced gardening solutions and sustainable practices redefine urban living. Join us in cultivating a greener, more prosperous future."
-    image={{ src: "/solar_field_basic.jpg" }}
+    image={{ src: '/solar_field_basic.jpg' }}
     buttons={[
-      { variant: "primary", text: "FullUI", href: "#" },
-      { variant: "secondary", text: "Read more", href: "#" },
+      { variant: 'primary', text: 'FullUI', href: '#' },
+      { variant: 'secondary', text: 'Read more', href: '#' },
     ]}
   />
 
@@ -25,9 +29,9 @@ import {
     frame="panel"
     layout="split"
     heading="Ready to Transform Your Space?"
-    image={{ src: "/solar_panels_basic.jpg" }}
+    image={{ src: '/solar_panels_basic.jpg' }}
     text="Take the first step towards creating your urban oasis with EcoGrow Solutions."
-    buttons={[{ variant: "primary", text: "Get Started Today", href: "#" }]}
+    buttons={[{ variant: 'primary', text: 'Get Started Today', href: '#' }]}
   />
 
   <FeaturesSection
@@ -40,14 +44,14 @@ import {
     frame="panel"
     cards={[
       {
-        icon: "message-circle",
-        heading: "Vertical Gardening Systems",
-        text: "Maximize your space with our state-of-the-art vertical gardening solutions, designed to grow more in less space.",
+        icon: 'message-circle',
+        heading: 'Vertical Gardening Systems',
+        text: 'Maximize your space with our state-of-the-art vertical gardening solutions, designed to grow more in less space.',
       },
       {
-        icon: "message-circle",
-        heading: "Vertical Gardening Systems",
-        text: "Maximize your space with our state-of-the-art vertical gardening solutions, designed to grow more in less space.",
+        icon: 'message-circle',
+        heading: 'Vertical Gardening Systems',
+        text: 'Maximize your space with our state-of-the-art vertical gardening solutions, designed to grow more in less space.',
       },
     ]}
   />
@@ -75,28 +79,7 @@ import {
 
   <Deck
     frame="panel"
-    cards={[
-      {
-        rating: 5,
-        text: "EcoGrow Solutions transformed my balcony into a thriving garden oasis! Their vertical gardening system is ingenious and easy to maintain.",
-      },
-      {
-        rating: 4,
-        text: "As a sustainability advocate, I appreciate EcoGrow's commitment to eco-friendly practices. Their team provided excellent guidance on composting and rainwater harvesting.",
-      },
-      {
-        rating: 5,
-        text: "I attended one of EcoGrow's workshops and was blown away by the knowledge and passion of their instructors. Highly recommend for anyone looking to start their urban gardening journey!",
-      },
-      {
-        rating: 5,
-        text: "The community aspect of EcoGrow Solutions is fantastic. I've connected with fellow urban gardeners, exchanged tips, and even participated in garden swaps. It truly feels like a supportive ecosystem.",
-      },
-      {
-        rating: 4,
-        text: "From consultation to installation, EcoGrow Solutions exceeded my expectations. Their team was professional, knowledgeable, and genuinely cared about my garden's success.",
-      },
-    ]}
+    cards={reviews}
   />
 
   <h1>Subscription plans</h1>
@@ -106,13 +89,13 @@ import {
     cards={[
       {
         price: 9.99,
-        heading: "Green Starter",
+        heading: 'Green Starter',
         text: "Access to EcoGrow's comprehensive library of educational resources and gardening guides. Monthly newsletter with tips, tricks, and seasonal gardening advice. Exclusive discounts on EcoGrow products and workshops. Community forum access to connect with fellow urban gardeners and share experiences. Starter kit with seeds and basic gardening supplies delivered quarterly.",
       },
       {
         price: 24.99,
-        heading: "EcoPro",
-        text: "All features included in Green Starter plan, plus: Personalized gardening consultations with EcoGrow experts to optimize your urban garden layout and plant selection. Priority registration and discounted rates for EcoGrow workshops and events. Quarterly subscription box with curated eco-friendly gardening products, tools, and seeds. Early access to new EcoGrow products and innovations. Dedicated customer support hotline for prompt assistance with gardening queries and troubleshooting. Choose the tier that best fits your gardening needs and join the EcoGrow community today!",
+        heading: 'EcoPro',
+        text: 'All features included in Green Starter plan, plus: Personalized gardening consultations with EcoGrow experts to optimize your urban garden layout and plant selection. Priority registration and discounted rates for EcoGrow workshops and events. Quarterly subscription box with curated eco-friendly gardening products, tools, and seeds. Early access to new EcoGrow products and innovations. Dedicated customer support hotline for prompt assistance with gardening queries and troubleshooting. Choose the tier that best fits your gardening needs and join the EcoGrow community today!',
       },
     ]}
   />
@@ -147,6 +130,6 @@ import {
     align="stretch"
     heading="Let's Cultivate Change, Together!"
     text="Ready to transform your urban space into a green sanctuary?"
-    buttons={[{ variant: "primary", text: "Plant Your Future Now", href: "#" }]}
+    buttons={[{ variant: 'primary', text: 'Plant Your Future Now', href: '#' }]}
   />
 </Layout>
