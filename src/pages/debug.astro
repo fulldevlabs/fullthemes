@@ -1,0 +1,26 @@
+---
+import { Cards, Layout, Section } from '@fulldevlabs/fullui'
+
+import { getCollection } from 'astro:content'
+
+const services = await getCollection('services')
+---
+
+<Layout>
+  <div class="bg-blue">hoi</div>
+
+  <!-- <Cards
+    collection="services"
+    cards={services}
+  /> -->
+
+  <Section
+    frame="panel"
+    _cards={{
+      collection: 'services',
+      align: 'center',
+      frame: 'panel',
+    }}
+    cards={services}
+  />
+</Layout>

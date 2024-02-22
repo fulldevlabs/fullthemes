@@ -1,9 +1,7 @@
 _schema: banner
 scheme: dark
 position: relative
-spec: De goekoopste van Nederland
+spec: Made with FullUI
 links:
-  - text: 316 1671 5746
-    href: 'tel:31616715746'
-  - text: info@hltw.nl
-    href: 'mailto:info@hltw.nl'
+  - text: Fulldev
+    href: 'https://full.dev'

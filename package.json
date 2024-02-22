@@ -19,7 +19,7 @@
     "@astrojs/sitemap": "^3.0.5",
     "@astrojs/starlight": "^0.18.0",
     "@bookshop/astro-bookshop": "3.9.0",
-    "@fulldevlabs/fullui": "^0.0.5",
+    "@fulldevlabs/fullui": "^0.0.6",
     "@radix-ui/colors": "^3.0.0",
     "astro": "^4.3.6",
     "astro-favicons": "^2.0.2",

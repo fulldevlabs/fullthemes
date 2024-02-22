@@ -1,11 +1,5 @@
 ---
-import {
-  CtaSection,
-  Deck,
-  HeroSection,
-  HighlightsSection,
-  Layout,
-} from '@fulldevlabs/fullui/src'
+import { CtaSection, Deck, HeroSection, Layout } from '@fulldevlabs/fullui/src'
 
 import { getCollection } from 'astro:content'
 
@@ -47,7 +41,7 @@ const posts = await getCollection('posts')
     buttons={[{ text: 'Sign up', href: '#' }]}
   />
 
-  <HighlightsSection
+  <!-- <HighlightsSection
     frame="panel"
     layout="split"
     image={{ src: '/gardening.avif' }}
@@ -60,5 +54,5 @@ const posts = await getCollection('posts')
     tagline="Most popular this month"
     heading="The Secrets of Gardening: Cultivating a Greener Tomorrow"
     text="Discover the ultimate guide to sustainable gardening, where we delve into eco-friendly practices and innovative techniques to create a greener world. Learn how to cultivate thriving gardens while reducing environmental impact and fostering biodiversity."
-  />
+  /> -->
 </Layout>

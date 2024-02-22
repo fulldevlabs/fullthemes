@@ -5,7 +5,6 @@ import {
   HeroSection,
   Layout,
   Section,
-  SpotlightSection,
 } from '@fulldevlabs/fullui/src'
 
 import { getCollection } from 'astro:content'
@@ -125,11 +124,12 @@ const reviews = await getCollection('reviews')
   Are your products suitable for indoor gardening?
   Yes, many of our products are designed for indoor use, making them ideal for apartment dwellers and those with limited outdoor space. Our experts can recommend the best solutions for your indoor gardening needs. -->
 
-  <SpotlightSection
+  <!-- TODO -->
+  <!-- <SpotlightSection
     frame="panel"
     align="stretch"
     heading="Let's Cultivate Change, Together!"
     text="Ready to transform your urban space into a green sanctuary?"
     buttons={[{ variant: 'primary', text: 'Plant Your Future Now', href: '#' }]}
-  />
+  /> -->
 </Layout>
