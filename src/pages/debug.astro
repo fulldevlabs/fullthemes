@@ -1,26 +1,43 @@
 ---
-import { Cards, Layout, Section } from '@fulldevlabs/fullui'
+import { Layout, Section, getRouteByEntry } from '@fulldevlabs/fullui'
 
-import { getCollection } from 'astro:content'
+import { getCollection, type ContentCollectionKey } from 'astro:content'
 
-const services = await getCollection('services')
+export async function getStaticPaths() {
+  // Object containing all collections keys
+  const collections: ContentCollectionKey[] = ['products']
+  // Get all entries from all collections, resolve promises, flatten array, and filter out any undefined values
+  const promises = collections.map((collection) => getCollection(collection))
+  const results = await Promise.all(promises)
+  const flattened = results.flat()
+  const filtered = flattened.filter(Boolean)
+  const entries = filtered
+
+  // Return paths for all entries
+  return entries.map((entry) => ({
+    params: {
+      route:
+        getRouteByEntry(entry) === '/' ? undefined : getRouteByEntry(entry),
+    },
+    props: {
+      entry: entry,
+    },
+  }))
+}
+
+const products = await getCollection('products')
 ---
 
 <Layout>
   <div class="bg-blue">hoi</div>
 
-  <!-- <Cards
-    collection="services"
-    cards={services}
-  /> -->
-
   <Section
     frame="panel"
     _cards={{
-      collection: 'services',
-      align: 'center',
+      collection: 'products',
+      align: 'start',
       frame: 'panel',
     }}
-    cards={services}
+    cards={products}
   />
 </Layout>

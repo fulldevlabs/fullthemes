@@ -8,5 +8,4 @@ seo:
     alt:
 
 sections:
-  
 ---
